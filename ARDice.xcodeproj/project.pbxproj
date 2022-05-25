@@ -11,6 +11,8 @@
 		DF3E168E283E9AD100EB699D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3E168D283E9AD100EB699D /* ContentView.swift */; };
 		DF3E1690283E9AD500EB699D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3E168F283E9AD500EB699D /* Assets.xcassets */; };
 		DF3E1693283E9AD500EB699D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3E1692283E9AD500EB699D /* Preview Assets.xcassets */; };
+		DF3E169B283EA11900EB699D /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = DF3E169A283EA11900EB699D /* FocusEntity */; };
+		DF3E169D283EA6F700EB699D /* Dice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DF3E169C283EA6F700EB699D /* Dice.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		DF3E168D283E9AD100EB699D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF3E168F283E9AD500EB699D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3E1692283E9AD500EB699D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF3E169C283EA6F700EB699D /* Dice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Dice.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3E169B283EA11900EB699D /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		DF3E168A283E9AD100EB699D /* ARDice */ = {
 			isa = PBXGroup;
 			children = (
+				DF3E169C283EA6F700EB699D /* Dice.usdz */,
 				DF3E168B283E9AD100EB699D /* ARDiceApp.swift */,
 				DF3E168D283E9AD100EB699D /* ContentView.swift */,
 				DF3E168F283E9AD500EB699D /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ARDice;
+			packageProductDependencies = (
+				DF3E169A283EA11900EB699D /* FocusEntity */,
+			);
 			productName = ARDice;
 			productReference = DF3E1688283E9AD100EB699D /* ARDice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = DF3E167F283E9AD100EB699D;
+			packageReferences = (
+				DF3E1699283EA11900EB699D /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = DF3E1689283E9AD100EB699D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				DF3E1693283E9AD500EB699D /* Preview Assets.xcassets in Resources */,
 				DF3E1690283E9AD500EB699D /* Assets.xcassets in Resources */,
+				DF3E169D283EA6F700EB699D /* Dice.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +282,13 @@
 				DEVELOPMENT_TEAM = TX88D8XM39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Realidade aumentada";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +313,13 @@
 				DEVELOPMENT_TEAM = TX88D8XM39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Realidade aumentada";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF3E1699283EA11900EB699D /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF3E169A283EA11900EB699D /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF3E1699283EA11900EB699D /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF3E1680283E9AD100EB699D /* Project object */;
 }
